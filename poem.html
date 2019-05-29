@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Show Phrase</title>
+</head>
+<body>
+<h2>Show Phrase</h2>
+<label>How Many Phrases?
+    <input type="text" id="val" name=""
+</label>
+<button id="button">Go!</button><br><br>
+<div id="phrase"></div>
+</body>
+<script src ="http://code.jquery.com/jquery.js"></script>
+<script>
+    $("#button").on('click', function(){
+        //alert ("Roses are red");
+        let num = $("#val").val();
+        // alert(val);
+    $("#phrase").load('showphrase.php',{num:num});
+    });
+</script>
+</html>
